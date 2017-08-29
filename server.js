@@ -76,8 +76,9 @@ app.get("/scrape", function(req, res) {
 
     });
   });
-  // Tell the browser that we finished scraping the text
-  res.sendFile(path.join(__dirname, '../public', 'movies.html'));
+  
+  res.send("scrape complete");
+
 });
 
 // This will get the movies we scraped from the mongoDB
