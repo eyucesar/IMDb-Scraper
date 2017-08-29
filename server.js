@@ -9,6 +9,8 @@ var Movie = require("./models/Movie.js");
 // Our scraping tools
 var request = require("request");
 var cheerio = require("cheerio");
+var PORT = process.env.PORT || 3000;
+
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 
