@@ -77,7 +77,7 @@ app.get("/scrape", function(req, res) {
     });
   });
   // Tell the browser that we finished scraping the text
-  res.redirect("/movies.html");
+  res.sendFile("/movies.html");
 });
 
 // This will get the movies we scraped from the mongoDB
