@@ -110,6 +110,19 @@ h5 {
 
 .movieLink {
   color: #7E7E7E;
+  background-color: white;
+/*  width: 50%;*/
+  font-size: 12px;
+  text-transform: none;
+  padding: 0 10px 0 10px;
+  margin: 0;
+  border-radius: 5px;
+  height: 32px;
+}
+
+.movieLink:hover, .movieLink:focus {
+  background-color: #dab800;
+  color: black;
 }
 
 .movieLink:hover {

@@ -4,7 +4,7 @@ $.getJSON("/movies", function(data) {
   // For each one
   for (var i = 0; i < data.length; i++) {
     // append to page
-    $(".collection").append("<a data-id='" + data[i]._id + "'class='collection-item'>" + [i + 1] + ". " + data[i].title + "<div class='right-align' id='viewMovie'><object><a class='movieLink' href='" + data[i].link + "' target='_blank'>View Movie" + "</a></object></div><br>" + "<h3>" + data[i].link + "</h3></a>");
+    $(".collection").append("<a data-id='" + data[i]._id + "'class='collection-item'>" + [i + 1] + ". " + data[i].title + "<div class='right-align' id='viewMovie'><object><a class='movieLink waves-effect waves-light btn' href='" + data[i].link + "' target='_blank'>View Movie" + "</a></object></div><br>" + "<h3>" + data[i].link + "</h3></a>");
   }
 });
 
@@ -103,4 +103,13 @@ $().ready(function() {
       .animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );      
   });
 });
+
+//materialize toasts (currently not working, will fix)
+$("#saveNote").on("click", function() {
+  Materialize.toast('Saved', 4000);
+})
+
+$("#deleteNote").on("click", function() {
+  Materialize.toast('Saved', 4000);
+})
 
